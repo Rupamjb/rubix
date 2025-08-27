@@ -1,0 +1,43 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --glass-bg: rgba(255,255,255,0.16);
+  --glass-brd: rgba(255,255,255,0.32);
+}
+
+html, body {
+  @apply bg-base text-black;
+  background-image: url("/noise.png");
+  background-repeat: repeat;
+}
+
+.glass {
+  background: var(--glass-bg);
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
+  border: 1px solid var(--glass-brd);
+  @apply rounded-2xl shadow-glass;
+}
+
+/* Hover-force (subtle parallax tilt) */
+.hover-force {
+  transform-style: preserve-3d;
+  transition: transform .35s cubic-bezier(.2,.8,.2,1);
+}
+.hover-force:hover {
+  transform: perspective(800px) rotateX(4deg) rotateY(-4deg) translateZ(4px) scale(1.02);
+}
+
+/* Big headline (like the reference) */
+.headline {
+  font-size: clamp(3rem, 8vw, 8rem);
+  font-weight: 900;
+  line-height: .95;
+  letter-spacing: -0.02em;
+}
+
+/* AOS tweaks */
+[data-aos] { will-change: transform, opacity; }
+[data-aos][data-aos][data-aos-duration="0"] { transition-duration: 0s !important; }

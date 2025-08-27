@@ -1,0 +1,26 @@
+{
+  "pages\\_app.jsx -> @barba/core": {
+    "id": "pages\\_app.jsx -> @barba/core",
+    "files": [
+      "static/chunks/node_modules_barba_core_dist_barba_umd_js.js"
+    ]
+  },
+  "pages\\_app.jsx -> @studio-freight/lenis": {
+    "id": "pages\\_app.jsx -> @studio-freight/lenis",
+    "files": [
+      "static/chunks/node_modules_studio-freight_lenis_dist_lenis_mjs.js"
+    ]
+  },
+  "pages\\_app.jsx -> aos": {
+    "id": "pages\\_app.jsx -> aos",
+    "files": [
+      "static/chunks/node_modules_aos_dist_aos_js.js"
+    ]
+  },
+  "pages\\_app.jsx -> aos/dist/aos.css": {
+    "id": "pages\\_app.jsx -> aos/dist/aos.css",
+    "files": [
+      "static/chunks/node_modules_aos_dist_aos_css.js"
+    ]
+  }
+}
